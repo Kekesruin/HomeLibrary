@@ -4,22 +4,19 @@
 
 <div align="center">
   <h3>Главный экран</h3>
-  <img src="screenshots/main.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
-  
+  <img src="Screenshots/main.png" style="width: 100%; max-width: 500px; border-radius: 12px;">
   <br><br>
   
   <h3>Добавить книгу</h3>
-  <img src="screenshots/add-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
-  
+  <img src="Screenshots/add-book.png" style="width: 100%; max-width: 500px; border-radius: 12px;">
   <br><br>
   
   <h3>Изменить книгу</h3>
-  <img src="screenshots/edit-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
-  
+  <img src="Screenshots/edit-book.png" style="width: 100%; max-width: 500px; border-radius: 12px;">
   <br><br>
   
   <h3>Удалить книгу</h3>
-  <img src="screenshots/delete-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
+  <img src="Screenshots/delete-book.png" style="width: 100%; max-width: 500px; border-radius: 12px;">
 </div>
 
 ## Возможности
