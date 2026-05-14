@@ -34,7 +34,6 @@ namespace HomeLibrary.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Параметры для хранимой процедуры InsertBook
                 var parameters = new[]
                 {
                     new SqlParameter("@Title", book.Title ?? (object)DBNull.Value),
@@ -58,7 +57,6 @@ namespace HomeLibrary.Controllers
         
         public async Task<IActionResult> Edit(int id)
         {
-            // Вызов хранимой процедуры GetBookById
             var books = await _context.Books
                 .FromSqlRaw("EXEC GetBookById @BookId", new SqlParameter("@BookId", id))
                 .ToListAsync();
