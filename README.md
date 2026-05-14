@@ -5,16 +5,26 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Главный экран</b></td>
-      <td align="center"><b>Добавить книгу</b></td>
-      <td align="center"><b>Редактировать книгу</b></td>
-      <td align="center"><b>Удалить книгу</b></td>
-    </tr>
-    <tr>
-      <td><img src="Screenshots/main.png" width="100%"></td>
-      <td><img src="screenshots/add-book.png" width="100%"></td>
-      <td><img src="screenshots/edit-book.png" width="100%"></td>
-      <td><img src="screenshots/delete-book.png" width="100%"></td>
+      <td align="center">
+        <img src="screenshots/main.png" width="200"><br>
+        <b>Главный экран</b><br>
+        <sub>Основная навигация</sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/add-book.png" width="200"><br>
+        <b></b>Добавить книгу<br>
+        <sub>Редактирование данных</sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/edit-book.png" width="200"><br>
+        <b>Изменить книгу</b><br>
+        <sub>Редактирование данных</sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/delete-book.png" width="200"><br>
+        <b>Удалить книгу</b><br>
+        <sub>Редактирование данных</sub>
+      </td>
     </tr>
   </table>
 </div>
