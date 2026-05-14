@@ -89,15 +89,10 @@
 sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -C -i /docker-entrypoint-initdb.d/create_table.sql
 sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -d HomeLibrary -C -i /docker-entrypoint-initdb.d/procedures.sql
 ```
-###Вывод xml запросов в терминале: 
+## Вывод xml запросов в терминале: 
 ```
 sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -d HomeLibrary -C -Y 80 -i /docker-entrypoint-initdb.d/xml_query_example.sql
 
-```
-3. Запуск: 
-```
-dotnet restore
-dotnet run
 ```
 
 ## Примечания
