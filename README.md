@@ -6,9 +6,8 @@
   <table>
     <tr>
       <td align="center">
-        <img src="Screenshots/main.png" style="width: 400px;><br>
+        <img src="Screenshots/main.png" style="width: 600px;><br>
         <b>Главный экран</b><br>
-        <sub>Основная навигация</sub>
       </td>
       <td align="center">
         <img src="Screenshots/add-book.png" width="400"><br>
