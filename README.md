@@ -6,22 +6,22 @@
   <table>
     <tr>
       <td align="center">
-        <img src="screenshots/main.png" width="200"><br>
+        <img src="Screenshots/main.png" width="200"><br>
         <b>Главный экран</b><br>
         <sub>Основная навигация</sub>
       </td>
       <td align="center">
-        <img src="screenshots/add-book.png" width="200"><br>
+        <img src="Screenshots/add-book.png" width="200"><br>
         <b></b>Добавить книгу<br>
         <sub>Редактирование данных</sub>
       </td>
       <td align="center">
-        <img src="screenshots/edit-book.png" width="200"><br>
+        <img src="Screenshots/edit-book.png" width="200"><br>
         <b>Изменить книгу</b><br>
         <sub>Редактирование данных</sub>
       </td>
       <td align="center">
-        <img src="screenshots/delete-book.png" width="200"><br>
+        <img src="Screenshots/delete-book.png" width="200"><br>
         <b>Удалить книгу</b><br>
         <sub>Редактирование данных</sub>
       </td>
