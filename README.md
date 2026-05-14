@@ -2,8 +2,6 @@
 
 Веб-приложение для управления домашней библиотекой книг. Выполнено в рамках тестового задания.
 
---
-
 <div align="center">
   <table>
     <tr>
@@ -13,22 +11,19 @@
       <td align="center"><b>Удалить книгу</b></td>
     </tr>
     <tr>
-      <td><img src="Screenshots/ГлавныйЭкран.png" width="100%"></td>
-      <td><img src="screenshots/ДобавитьКнигу.png" width="100%"></td>
-      <td><img src="screenshots/РедактироватьКнигу.png" width="100%"></td>
-      <td><img src="screenshots/УдалитьКнигу.png" width="100%"></td>
+      <td><img src="Screenshots/main.png" width="100%"></td>
+      <td><img src="screenshots/add-book.png" width="100%"></td>
+      <td><img src="screenshots/edit-book.png" width="100%"></td>
+      <td><img src="screenshots/delete-book.png" width="100%"></td>
     </tr>
   </table>
 </div>
 
---
 ## Возможности
 - Просмотр списка книг
 - Добавление, редактирование, удаление книг
 - Хранимые процедуры для CRUD
 - Оглавление в формате HTML
-
---
 
 ## Хранимые процедуры
 
@@ -40,7 +35,6 @@
 | UpdateBook | UPDATE | Обновляет существующую книгу |
 | DeleteBook | DELETE | Удаляет книгу по ID |
 
---
 ## Стек технологий
 
 | Слой | Технология |
@@ -50,8 +44,6 @@
 | Бэкенд | ASP.NET Core MVC (C#) |
 | Контейнеризация | Docker + docker-compose |
 | Интерфейс | Razor Pages (HTML + CSS) |
-
---
 
 ## Архитектура(MVC):
 
@@ -63,12 +55,10 @@
   - `Delete.cshtml`    Подтверждение удаления
 - **Controllers:** `BooksController.cs`    Обработка CRUD-операций
 
---
 
 ## Схема взаимодействия
 Пользователь (браузер) -> http://localhost:5123/Books -> Program.cs -> BooksController -> AppDbContext -> MS SQL Server (Docker, порт 1433)
 
---
 
 ## Запуск
 Клонировать репозиторий:
@@ -91,7 +81,6 @@ sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sq
 dotnet restore
 dotnet run
 ```
---
 
 ## Примечания
 - MS SQL Server работает в Docker, не требует установки на хост
