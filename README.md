@@ -3,29 +3,23 @@
 Веб-приложение для управления домашней библиотекой книг. Выполнено в рамках тестового задания.
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="Screenshots/main.png" style="width: 600px;><br>
-        <b>Главный экран</b><br>
-      </td>
-      <td align="center">
-        <img src="Screenshots/add-book.png" width="400"><br>
-        <b></b>Добавить книгу<br>
-        <sub>Редактирование данных</sub>
-      </td>
-      <td align="center">
-        <img src="Screenshots/edit-book.png" width="400"><br>
-        <b>Изменить книгу</b><br>
-        <sub>Редактирование данных</sub>
-      </td>
-      <td align="center">
-        <img src="Screenshots/delete-book.png" width="400"><br>
-        <b>Удалить книгу</b><br>
-        <sub>Редактирование данных</sub>
-      </td>
-    </tr>
-  </table>
+  <h3>Главный экран</h3>
+  <img src="screenshots/main.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
+  
+  <br><br>
+  
+  <h3>Добавить книгу</h3>
+  <img src="screenshots/add-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
+  
+  <br><br>
+  
+  <h3>Изменить книгу</h3>
+  <img src="screenshots/edit-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
+  
+  <br><br>
+  
+  <h3>Удалить книгу</h3>
+  <img src="screenshots/delete-book.png" style="width: 100%; max-width: 800px; border-radius: 12px;">
 </div>
 
 ## Возможности
