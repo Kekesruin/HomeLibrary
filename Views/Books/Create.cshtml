@@ -1,0 +1,30 @@
+@model HomeLibrary.Models.Book
+
+<h1>Добавить книгу</h1>
+
+<form method="post">
+    <label>Название:</label>
+    <input name="Title" required />
+    <br/>
+    <label>Автор:</label>
+    <input name="Author" required />
+    <br/>
+    <label>Год:</label>
+    <input name="Year" type="number" />
+    <br/>
+    <label>Жанр:</label>
+    <input name="Genre" />
+    <br/>
+    <label>Издательство:</label>
+    <input name="Publisher" />
+    <br/>
+    <label>ISBN:</label>
+    <input name="ISBN" />
+    <br/>
+    <label>Оглавление (HTML):</label>
+    <textarea name="ContentHtml" rows="10" cols="50"></textarea>
+    <br/>
+    <button type="submit">Сохранить</button>
+</form>
+
+<a href="/Books">← Назад к списку</a>

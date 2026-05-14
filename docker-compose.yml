@@ -1,0 +1,22 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "HomeLibrary123!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+      - ./SQL:/docker-entrypoint-initdb.d
+
+  app:
+    build: .
+    ports:
+      - "5123:5123"
+    depends_on:
+      - mssql
+
+volumes:
+  mssql-data:
+

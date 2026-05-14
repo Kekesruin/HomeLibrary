@@ -1,0 +1,11 @@
+@model HomeLibrary.Models.Book
+
+<h1>Удалить книгу</h1>
+
+<p>Вы уверены, что хотите удалить книгу <strong>@Model.Title</strong>?</p>
+
+<form method="post" asp-action="Delete">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit">Да, удалить</button>
+    <a href="/Books">Отмена</a>
+</form>

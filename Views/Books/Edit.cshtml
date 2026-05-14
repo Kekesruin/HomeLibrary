@@ -1,0 +1,32 @@
+@model HomeLibrary.Models.Book
+
+<h1>Редактировать книгу</h1>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    
+    <label>Название:</label>
+    <input name="Title" value="@Model.Title" required />
+    <br/>
+    <label>Автор:</label>
+    <input name="Author" value="@Model.Author" required />
+    <br/>
+    <label>Год:</label>
+    <input name="Year" type="number" value="@Model.Year" />
+    <br/>
+    <label>Жанр:</label>
+    <input name="Genre" value="@Model.Genre" />
+    <br/>
+    <label>Издательство:</label>
+    <input name="Publisher" value="@Model.Publisher" />
+    <br/>
+    <label>ISBN:</label>
+    <input name="ISBN" value="@Model.ISBN" />
+    <br/>
+    <label>Оглавление (HTML):</label>
+    <textarea name="ContentHtml" rows="10" cols="50">@Model.ContentHtml</textarea>
+    <br/>
+    <button type="submit">Сохранить</button>
+</form>
+
+<a href="/Books">← Назад к списку</a>

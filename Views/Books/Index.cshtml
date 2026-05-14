@@ -1,0 +1,32 @@
+@model List<HomeLibrary.Models.Book>
+
+<h1>Домашняя библиотека</h1>
+
+<a href="/Books/Create">Добавить книгу</a>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>Название</th>
+        <th>Автор</th>
+        <th>Год</th>
+        <th>Жанр</th>
+        <th>Издательство</th>
+        <th>ISBN</th>
+        <th>Действия</th>
+    </tr>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.Year</td>
+            <td>@book.Genre</td>
+            <td>@book.Publisher</td>
+            <td>@book.ISBN</td>
+            <td>
+                <a href="/Books/Edit/@book.Id">Изменить</a>
+                <a href="/Books/Delete/@book.Id" onclick="return confirm('Удалить?')">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
