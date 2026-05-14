@@ -17,5 +17,11 @@ CREATE TABLE books (
     isbn NVARCHAR(20),
     content_html NVARCHAR(MAX)
 );
-
 GO
+
+IF NOT EXISTS (SELECT * FROM sys.columns WHERE name = 'content_xml' AND object_id = OBJECT_ID('books'))
+BEGIN
+    ALTER TABLE books ADD content_xml AS CAST(content_html AS XML);
+END;
+GO
+

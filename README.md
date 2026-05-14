@@ -60,6 +60,21 @@
 Пользователь (браузер) -> http://localhost:5123/Books -> Program.cs -> BooksController -> AppDbContext -> MS SQL Server (Docker, порт 1433)
 
 
+## Работа с XML/HTML
+
+Поле `content_html` хранит оглавление книги в формате NVARCHAR(MAX). Для редактирования используется стандартное текстовое поле с возможностью ввода HTML-тегов. Вычисляемый столбец `content_xml` автоматически преобразует содержимое в XML-тип, что позволяет выполнять XPath-запросы.
+<div align="center">
+  <h3>Главный экран</h3>
+  <img src="Screenshots/XML.png" style="width: 100%; max-width: 500px; border-radius: 12px;">
+  <br><br>
+</div>
+
+### Выборка данных из XML
+Примеры SQL-запросов для работы с XML-полем находятся в файле `SQL/xml_query_example.sql`:
+- Извлечение заголовков глав через XPath
+- Подсчёт количества глав
+- Поиск по содержимому оглавления
+
 ## Запуск
 Клонировать репозиторий:
         git clone https://github.com/Kekesruin/HomeLibrary.git
@@ -69,11 +84,13 @@
 ```   
    docker compose up -d --build
 ```
-2. Выполнить sqlcmd команды (Создание таблицы, создание хранимых процедур, заполнение таблицы):
+2. Выполнить sqlcmd команды (Создание таблицы, создание хранимых процедур, заполнение таблицы, xml запросы):
 ```
 sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -C -i /docker-entrypoint-initdb.d/create_table.sql
 sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -d HomeLibrary -C -i /docker-entrypoint-initdb.d/procedures.sql
-sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -d HomeLibrary -C -i /docker-entrypoint-initdb.d/seed_data.sql
+```
+Вывод xml запросов в терминале: 
+                        sudo docker exec -i $(sudo docker ps -qf "name=mssql") /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P "HomeLibrary123!" -d HomeLibrary -C -Y 80 -i /docker-entrypoint-initdb.d/xml_query_example.sql
 
 ```
 3. Запуск: 
