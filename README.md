@@ -6,7 +6,7 @@
   <table>
     <tr>
       <td align="center">
-        <img src="Screenshots/main.png" width="400"><br>
+        <img src="Screenshots/main.png" style="width: 400px;><br>
         <b>Главный экран</b><br>
         <sub>Основная навигация</sub>
       </td>
